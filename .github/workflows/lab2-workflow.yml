@@ -21,6 +21,3 @@ jobs:
     steps:
       - name: "Printing Custom Message"
         run: echo "{{ inputs.custom_message }}"
-      - if: "${{ inputs.run_job == 'true' }}"
-        name: "Printing run-job boolean value"
-        run: echo "${{ inputs.run_job }}"
